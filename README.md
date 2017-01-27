@@ -51,7 +51,7 @@ project files in the IDE. Press `F6` to run or `Ctrl + F5` to debug.
 
 ##Details
 ###Lab 1 - UML
-TBA
+Implementation of a simple product ordering system based on given UML class and sequence diagrams.  
 
 ---
 > Written with [StackEdit](https://stackedit.io/).
