@@ -4,8 +4,21 @@
 
 package com.shevtsod;
 
-public class OrderLine {
-	
-	private int quantity;
+import java.math.BigDecimal;
 
+public class OrderLine {
+	private int quantity;
+	private BigDecimal price;
+	//TODO: Add Product collection here
+
+	/**
+	 * @return int quantity
+	 */
+	public int getQuantity() {
+		return quantity;
+	}
+
+	public BigDecimal getPrice() {
+		return price;
+	}
 }
