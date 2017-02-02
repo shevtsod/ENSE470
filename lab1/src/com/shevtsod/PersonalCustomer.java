@@ -8,6 +8,14 @@ public class PersonalCustomer extends Customer {
     private String creditCardNumber;
 
     /**
+     * Constructor. Initializes a personal customer
+     */
+    public PersonalCustomer(String name, String address, char rating, String creditCardNumber) {
+        super(name, address, rating);
+        this.creditCardNumber = creditCardNumber;
+    }
+
+    /**
      * @return String creditCardNumber
      */
     public String getCreditCardNumber() {
