@@ -3,7 +3,8 @@
 My solutions to labs in ENSE 470 - Software Systems Design
 
 ##Overview
-> **Lab 1** - UML
+> **Lab 1** - UML  
+> **Lab 2** - Factory Pattern 
 
 ##Compilation
 ###Eclipse IDE for Java Neon.1
@@ -52,6 +53,9 @@ project files in the IDE. Press `F6` to run or `Ctrl + F5` to debug.
 ##Details
 ###Lab 1 - UML
 Implementation of a simple product ordering system based on given UML class and sequence diagrams.  
+
+###Lab 2 - Factory Pattern
+Implementation of the factory pattern to create multiple concrete Tank classes with similar functionality.  
 
 ---
 > Written with [StackEdit](https://stackedit.io/).
