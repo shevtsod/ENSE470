@@ -18,7 +18,7 @@ public class Client {
      */
     public static void main(String[] args) {
 
-        Client program = new Client();
+        Client2 program = new Client2();
 
         Scanner input = new Scanner(System.in, "UTF-8");
         int userInput = -1;
