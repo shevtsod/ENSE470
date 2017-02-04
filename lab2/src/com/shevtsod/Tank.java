@@ -9,16 +9,9 @@ public abstract class Tank {
 				     country;
 	protected int hitPoints,
 				  armor,
-				  shellDamage,
+				  shellDamage = 0,
 				  currentHealth;
 	protected boolean destroyed = false;
-	
-	/**
-	 * Default constructor
-	 */
-	public Tank() {
-		//TODO: Implement Tank()
-	}
 	
 	/**
 	 * Cause the tank to take damage.
@@ -28,7 +21,7 @@ public abstract class Tank {
 	 * @param damage
 	 * 		integer damage taken by the Tank
 	 * @param penetration
-	 * 		integer penetration multiplier
+	 * 		integer penetration multiplier (must be higher than armor to cause damage)
 	 */
 	public void receiveHit(int damage, int penetration) {
 		double shotDamage = 0.0;
@@ -49,11 +42,12 @@ public abstract class Tank {
 			}
 		}
 	}
+
+	//Getters and setters
 	
 	public String getName() {
 		return name;
 	}
-
 	public void setName(String name) {
 		this.name = name;
 	}
@@ -61,7 +55,6 @@ public abstract class Tank {
 	public String getCountry() {
 		return country;
 	}
-
 	public void setCountry(String country) {
 		this.country = country;
 	}
@@ -69,7 +62,6 @@ public abstract class Tank {
 	public int getHitPoints() {
 		return hitPoints;
 	}
-
 	public void setHitPoints(int hitPoints) {
 		this.hitPoints = hitPoints;
 	}
@@ -77,7 +69,6 @@ public abstract class Tank {
 	public int getArmor() {
 		return armor;
 	}
-
 	public void setArmor(int armor) {
 		this.armor = armor;
 	}
@@ -85,7 +76,6 @@ public abstract class Tank {
 	public int getShellDamage() {
 		return shellDamage;
 	}
-
 	public void setShellDamage(int shellDamage) {
 		this.shellDamage = shellDamage;
 	}
@@ -93,7 +83,6 @@ public abstract class Tank {
 	public int getCurrentHealth() {
 		return currentHealth;
 	}
-
 	public void setCurrentHealth(int currentHealth) {
 		this.currentHealth = currentHealth;
 	}

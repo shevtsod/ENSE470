@@ -9,7 +9,11 @@ public class Tank_Abrams extends Tank {
 
 	public Tank_Abrams() {
 		super();
-		// TODO Auto-generated constructor stub
+		name = "Abrams Tank";
+		country = "United States";
+
+		hitPoints = currentHealth = 1000;
+		armor = 5;
 	}
 
 }

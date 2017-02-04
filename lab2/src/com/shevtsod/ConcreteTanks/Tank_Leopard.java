@@ -9,7 +9,11 @@ public class Tank_Leopard extends Tank {
 
 	public Tank_Leopard() {
 		super();
-		// TODO Auto-generated constructor stub
+		name = "Leopard Tank";
+		country = "Germany";
+
+		hitPoints = currentHealth = 750;
+		armor = 20;
 	}
 
 }

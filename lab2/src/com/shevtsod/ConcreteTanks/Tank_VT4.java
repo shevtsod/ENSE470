@@ -9,7 +9,11 @@ public class Tank_VT4 extends Tank {
 
 	public Tank_VT4() {
 		super();
-		// TODO Auto-generated constructor stub
+		name = "VT-4 Tank";
+		country = "China";
+
+		hitPoints = currentHealth = 1500;
+		armor = 15;
 	}
 
 }
