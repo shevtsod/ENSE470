@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>528</x>
+      <y>96</y>
+      <w>280</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>CoffeeMaker
+--
+_- CoffeeMaker INSTANCE = new CoffeeMaker()_
+--
+- CoffeeMaker()
+_+ getInstance() : CoffeeMaker_
++ getInventory() : Inventory
++ getRecipeBook() : RecipeBook
++ printCurrentInventory() : void
++ printCurrentRecipes() : void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>352</x>
+      <y>320</y>
+      <w>256</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Inventory
+--
+--
++ addReservoir(String, double, int) : void
++ editReservoir(String, String, double, int) : void
++ removeReservoir(String) : void
++ getReservoirs() : List&lt;Reservoir&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>232</x>
+      <y>88</y>
+      <w>176</w>
+      <h>136</h>
+    </coordinates>
+    <panel_attributes>Client4
+--
+- input : Scanner
+--
+_+ main(args: String[]) : void_
+- programLoop() : void
+- optionAddInventory() : void
+- optionEditInventory() : void
+- optionDeleteInventory() : void
+- getIntFromScanner(int, int) : int
+- getStringFromScanner() : String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>400</x>
+      <y>152</y>
+      <w>144</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1
+m2=1
+Tests</panel_attributes>
+    <additional_attributes>160.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>400</x>
+      <y>488</y>
+      <w>168</w>
+      <h>184</h>
+    </coordinates>
+    <panel_attributes>Reservoir
+--
+- name : String
+- price : double
+- capacity : int
+- remaining : int
+--
++ getName() : String
++ setName(String) : void
++ getPrice() : double
++ setPrice(double) : void
++ getCapacity() : int
++ setCapacity(int) : void
++ getRemaining() : int
++ setRemaining(int): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>472</x>
+      <y>392</y>
+      <w>40</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=0..*</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>472</x>
+      <y>208</y>
+      <w>216</w>
+      <h>128</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>250.0;10.0;250.0;50.0;10.0;50.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>712</x>
+      <y>320</y>
+      <w>256</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>RecipeBook
+--
+--
++ addRecipe(String, List&lt;Ingredient&gt;) : boolean
++ editRecipe(String, List&lt;Ingredient&gt;) : boolean
++ removeRecipe(String) : boolean
++ getRecipes() : List&lt;Recipe&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>664</x>
+      <y>208</y>
+      <w>192</w>
+      <h>128</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0;220.0;50.0;220.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>744</x>
+      <y>488</y>
+      <w>192</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Recipe
+--
+- name : String
+--
++ getName() : String
++ setName(String) : void
++ getIngredients() : List&lt;Ingredient&gt;
++ addIngredient(String, int) : boolean
+- removeIngredient(String) : boolean
+- removeAllIngredients() : void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>832</x>
+      <y>392</y>
+      <w>40</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=0..*</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>744</x>
+      <y>680</y>
+      <w>192</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>Ingredient
+--
+- name : String
+- quantity : int
+--
++ getName() : String
++ setName(String) : void
++ getQuantity() : int
++ setQuantity(int) : void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>832</x>
+      <y>600</y>
+      <w>40</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=0..*</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+</diagram>
